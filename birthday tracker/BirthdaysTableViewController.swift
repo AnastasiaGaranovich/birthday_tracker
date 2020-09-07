@@ -35,7 +35,7 @@ class BirthdaysTableViewController: UITableViewController {
         let fetchRequest = Birthday.fetchRequest() as NSFetchRequest<Birthday>
         let sortDescriptor1 = NSSortDescriptor(key: "lastName", ascending: true)
         let sortDescriptor2 = NSSortDescriptor(key: "firstName", ascending: true)
-        fetchRequest.sortDescriptors = [sortDescriptor2, sortDescriptor1]
+        fetchRequest.sortDescriptors = [sortDescriptor1, sortDescriptor2]
         do {
             birthdays = try context.fetch(fetchRequest)
         }
