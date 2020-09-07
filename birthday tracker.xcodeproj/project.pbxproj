@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		5D35902F24EEB16800847DBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D35902E24EEB16800847DBC /* AppDelegate.swift */; };
 		5D35903124EEB16800847DBC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D35903024EEB16800847DBC /* SceneDelegate.swift */; };
-		5D35903324EEB16800847DBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D35903224EEB16800847DBC /* ViewController.swift */; };
+		5D35903324EEB16800847DBC /* AddBirthdayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D35903224EEB16800847DBC /* AddBirthdayViewController.swift */; };
 		5D35903624EEB16800847DBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D35903424EEB16800847DBC /* Main.storyboard */; };
 		5D35903924EEB16800847DBC /* birthday_tracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5D35903724EEB16800847DBC /* birthday_tracker.xcdatamodeld */; };
 		5D35903B24EEB16900847DBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D35903A24EEB16900847DBC /* Assets.xcassets */; };
 		5D35903E24EEB16900847DBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D35903C24EEB16900847DBC /* LaunchScreen.storyboard */; };
+		5D7FDD3224F97E9600191D16 /* BirthdaysTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7FDD3124F97E9600191D16 /* BirthdaysTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5D35902B24EEB16800847DBC /* birthday tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "birthday tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D35902B24EEB16800847DBC /* Birthdays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Birthdays.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D35902E24EEB16800847DBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D35903024EEB16800847DBC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5D35903224EEB16800847DBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5D35903224EEB16800847DBC /* AddBirthdayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBirthdayViewController.swift; sourceTree = "<group>"; };
 		5D35903524EEB16800847DBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5D35903824EEB16800847DBC /* birthday_tracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = birthday_tracker.xcdatamodel; sourceTree = "<group>"; };
 		5D35903A24EEB16900847DBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D35903D24EEB16900847DBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D35903F24EEB16900847DBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D7FDD3124F97E9600191D16 /* BirthdaysTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdaysTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +52,7 @@
 		5D35902C24EEB16800847DBC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5D35902B24EEB16800847DBC /* birthday tracker.app */,
+				5D35902B24EEB16800847DBC /* Birthdays.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,12 +62,13 @@
 			children = (
 				5D35902E24EEB16800847DBC /* AppDelegate.swift */,
 				5D35903024EEB16800847DBC /* SceneDelegate.swift */,
-				5D35903224EEB16800847DBC /* ViewController.swift */,
+				5D35903224EEB16800847DBC /* AddBirthdayViewController.swift */,
 				5D35903424EEB16800847DBC /* Main.storyboard */,
 				5D35903A24EEB16900847DBC /* Assets.xcassets */,
 				5D35903C24EEB16900847DBC /* LaunchScreen.storyboard */,
 				5D35903F24EEB16900847DBC /* Info.plist */,
 				5D35903724EEB16800847DBC /* birthday_tracker.xcdatamodeld */,
+				5D7FDD3124F97E9600191D16 /* BirthdaysTableViewController.swift */,
 			);
 			path = "birthday tracker";
 			sourceTree = "<group>";
@@ -87,7 +90,7 @@
 			);
 			name = "birthday tracker";
 			productName = "birthday tracker";
-			productReference = 5D35902B24EEB16800847DBC /* birthday tracker.app */;
+			productReference = 5D35902B24EEB16800847DBC /* Birthdays.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -141,7 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D35903324EEB16800847DBC /* ViewController.swift in Sources */,
+				5D7FDD3224F97E9600191D16 /* BirthdaysTableViewController.swift in Sources */,
+				5D35903324EEB16800847DBC /* AddBirthdayViewController.swift in Sources */,
 				5D35902F24EEB16800847DBC /* AppDelegate.swift in Sources */,
 				5D35903124EEB16800847DBC /* SceneDelegate.swift in Sources */,
 				5D35903924EEB16800847DBC /* birthday_tracker.xcdatamodeld in Sources */,
@@ -295,7 +299,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "f.birthday-tracker";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Birthdays;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -312,7 +316,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "f.birthday-tracker";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Birthdays;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
